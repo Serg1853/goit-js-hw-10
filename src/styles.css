@@ -25,7 +25,6 @@ img {
   padding: 20px;
   display: flex;
   justify-content: start;
-  /* flex-wrap: wrap; */
   gap: 40px;
 }
 
