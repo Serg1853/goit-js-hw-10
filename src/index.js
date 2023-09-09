@@ -1,5 +1,5 @@
 import ref from './js/refs';
-// import { onFetchError } from './js/showError';
+import { onFetchError } from './js/showError';
 import './styles.css';
 import { fetchBreeds, fetchCatByBreed } from './js/cat-api';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
