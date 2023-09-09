@@ -2,7 +2,7 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import ref from './refs';
 
 const { selector, divCatInfo, loader, error } = ref;
-export default function onFetchError() {
+export  function onFetchError() {
   selector.classList.remove('is-hidden');
   loader.classList.replace('loader', 'is-hidden');
 
