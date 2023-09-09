@@ -1,6 +1,7 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import {selector, loader} from './refs'
-export default function onFetchError() {
+import { selector, loader } from './refs';
+
+export default function onFetchError(error) {
   selector.classList.remove('is-hidden');
   loader.classList.replace('loader', 'is-hidden');
 
