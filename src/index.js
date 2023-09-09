@@ -1,7 +1,8 @@
 import ref from './js/refs';
+import error from './js/showError';
 import './styles.css';
 import { fetchBreeds, fetchCatByBreed } from './js/cat-api';
-import { Notify } from 'notiflix/build/notiflix-notify-aio';
+// import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import SlimSelect from 'slim-select';
 import 'slim-select/dist/slimselect.css';
 
@@ -56,16 +57,16 @@ function onSelectBreed(event) {
     .catch(onFetchError);
 }
 
-function onFetchError(error) {
-  selector.classList.remove('is-hidden');
-  loader.classList.replace('loader', 'is-hidden');
+// function onFetchError(error) {
+//   selector.classList.remove('is-hidden');
+//   loader.classList.replace('loader', 'is-hidden');
 
-  Notify.failure(
-    'Oops! Something went wrong! Try reloading the page or select another cat breed!',
-    {
-      position: 'center-center',
-      width: '400px',
-      fontSize: '16px',
-    }
-  );
-}
+//   Notify.failure(
+//     'Oops! Something went wrong! Try reloading the page or select another cat breed!',
+//     {
+//       position: 'center-center',
+//       width: '400px',
+//       fontSize: '16px',
+//     }
+//   );
+// }
