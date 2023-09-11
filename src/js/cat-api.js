@@ -10,6 +10,7 @@ axios.defaults.headers.common['x-api-key'] =
 export async function fetchBreeds() {
   const responce = await axios.get('/breeds');
   return responce.data;
+
   // return fetch(`${BASE_URL}/breeds?api_key=${API_KEY}`).then(response => {
   //   if (!response.ok) {
   //     throw new Error(response.status);
@@ -21,6 +22,7 @@ export async function fetchBreeds() {
 export async function fetchCatByBreed(breedId) {
   const responce = await axios.get(`/images/search?breed_ids=${breedId}`);
   return responce.data;
+  
   // return fetch(
   //   `${BASE_URL}/images/search?api_key=${API_KEY}&breed_ids=${breedId}`
   // ).then(response => {
